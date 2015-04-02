@@ -6,7 +6,7 @@ ROOTで使うための自作クラス。今のところ```TGraphErrors```を継�
 #使い方
 ##ビルド
 
-```Makefile```の書き方はまだ勉強中。あと```LinkDef.h```の書き方もよくわからない。```OGraph```を使うには、```Makefile```のあるディレクトリで
+```Makefile``` の書き方はまだ勉強中。あと```LinkDef.h```の書き方もよくわからない。```OGraph```を使うには、```Makefile```のあるディレクトリで
 
 	make OGraph
 	
