@@ -61,17 +61,6 @@ TGraphでの範囲の変更は
 - [PukiWiki - memo/root/クラスの追加](http://ribf.riken.jp/~kondo/wiki/index.php?memo%2Froot%2F%A5%AF%A5%E9%A5%B9%A4%CE%C4%C9%B2%C3)
 - [ROOT入門-ROOTのマクロで、自作クラスを使う - あやしいむつあい技術](http://d.hatena.ne.jp/kamiogawa/20090430/1241072164)
 
-#参考リンク
-##Official
-- [Adding Your Class to ROOT: ClassDef | ROOT](https://root.cern.ch/drupal/content/adding-your-class-root-classdef)
-- [Selecting Dictionary Entries: Linkdef.h | ROOT](https://root.cern.ch/drupal/content/selecting-dictionary-entries-linkdefh)
-- [Users Manual 第15章 (ウイングアーク１ｓｔ株式会社 さんによる翻訳)](http://www.dw-sapporo.co.jp/technology/658766f830d530a130a430eb7f6e304d5834/root_usersguide_jp/15AddingaClass.pdf)
-
-##Unofficial
-- [MyClass [KamonoWiki]](http://www-he.scphys.kyoto-u.ac.jp/member/n.kamo/wiki/doku.php?id=study:software:root:myclass)
-- [ROOTに自作クラスを追加する - HongoWiki](http://www-utheal.phys.s.u-tokyo.ac.jp/~yuasa/wiki/index.php/ROOT%E3%81%AB%E8%87%AA%E4%BD%9C%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B)
-- [PukiWiki - memo/root/クラスの追加](http://ribf.riken.jp/~kondo/wiki/index.php?memo%2Froot%2F%A5%AF%A5%E9%A5%B9%A4%CE%C4%C9%B2%C3)
-- [ROOT入門-ROOTのマクロで、自作クラスを使う - あやしいむつあい技術](http://d.hatena.ne.jp/kamiogawa/20090430/1241072164)
 
 
 ---
