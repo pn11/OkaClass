@@ -1,0 +1,4 @@
+
+lib/*.so
+O*Dict.cxx
+O*Dict.hh
