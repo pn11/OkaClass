@@ -5,23 +5,27 @@ ROOTで使うための自作クラス。今のところ```TGraphErrors```を継�
 
 #使い方
 ##ビルド
+
 ```Makefile```の書き方はまだ勉強中。あと```LinkDef.h```の書き方もよくわからない。```OGraph```を使うには、```Makefile```のあるディレクトリで
 
 	make OGraph
 	
 する。すると同じディレクトリに```OH1Dict.cxx```, ```OH1Dict.h```が作られる(邪魔なので別のディレクトリにつくりたいがやり方が分からない)。さらに```lib```以下に```libOGraph.so```がつくられる。このライブラリファイルをROOTで読みこめばよい。
+
 ##ライブラリファイルの読み込み
-CINTで使うには、
+CINTで使うには、```.bashrc```とかに
 
-Usage: Run  
+	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTSYS/lib:$HOME/git/OkaClass/lib
 
-	gSystem.Load("lib/libmyclass.so")   
+と書いて、```OkaClass/lib```以下をロードできるようにする(ここでは```~/git```以下に```OkaClass```を置いた)。ROOTを開いたら、
 
-in CINT.
+	gSystem.Load("libOGraph.so")   
 
-	.L lib/libmyclass.so
+とすればOGraphのライブラリが読み込まれる。また、ファイルを直接指定して、
+
+	.L ~/git/OkaClass/lib/libOGraph.so
 	
-でも行ける？	
+としても行ける？
 
 #クラス
 ##OH1
@@ -31,6 +35,7 @@ TH1Dを継承している。今のところ宣言しただけで追加機能な�
 TGraphErrorsを継承している。
 ###メソッド
 ####軸ラベルの変更
+
 	OGraph::SetXTitle(char* titile)
 	OGraph::SetYTitle(char* titile)
 でX軸、Y軸のラベルを変えられる。```TGraph```とかだと```GetXaxis()->SetTitle("title")```とかしないと行けないので一手間減る。
