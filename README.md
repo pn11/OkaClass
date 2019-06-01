@@ -19,7 +19,9 @@ CINTで使うには、```.bashrc```とかに
 
 と書いて、```OkaClass/lib```以下をロードできるようにする(ここでは```~/git```以下に```OkaClass```を置いた)。ROOTを開いたら、
 
-	gSystem.Load("libOGraph.so")   
+```c++
+gSystem.Load("libOGraph.so")   
+```
 
 とすればOGraphのライブラリが読み込まれる (```.rootlogon.C``` に書いてもよい)。また、ファイルを直接指定して、
 
@@ -36,16 +38,21 @@ TGraphErrorsを継承している。
 ###メソッド
 ####軸ラベルの変更
 
-	OGraph::SetXTitle(char* titile)
-	OGraph::SetYTitle(char* titile)
+```c++
+OGraph::SetXTitle(char* title)
+OGraph::SetYTitle(char* title)
+```
+
 でX軸、Y軸のラベルを変えられる。```TGraph```とかだと```GetXaxis()->SetTitle("title")```とかしないと行けないので一手間減る。
 ####プロット範囲の変更
 TGraphでの範囲の変更は  
 [How to set ranges on axis ? | ROOT](https://root.cern.ch/drupal/content/how-set-ranges-axis)   
 の一番下に書いてあるけどとても覚えられたものではないので、分かりやすくした。
 
-	OGraph::SetXRange(Double_t ufirst, Double_t ulast)
-	OGraph::SetYRange(Double_t ufirst, Double_t ulast)
+```c++
+OGraph::SetXRange(Double_t ufirst, Double_t ulast)
+OGraph::SetYRange(Double_t ufirst, Double_t ulast)
+```
 でできる。変数```ufirst```とかのuは多分userのu。
 
 #参考リンク
